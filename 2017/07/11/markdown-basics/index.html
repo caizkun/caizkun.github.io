@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Markdown Basics · null</title><meta name="description" content="Markdown Basics - Zhikun Cai"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="/atom.xml"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="https://github.com/caizkun" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Markdown Basics</h1><div class="post-info">Jul 11, 2017</div><div class="post-content"><p>Because we forget, so we write. I created this blog mainly as a memo, keeping track of what I have learned and what I am becoming interested in. Since the posts will be generated using Markdown, I guess it is a good starting point to put down some tips for markdown usage. OK, Let’s us get started.</p>
+<p>More about Markdown is available in <a href="https://help.github.com/categories/writing-on-github/" target="_blank" rel="noopener">Writing in GitHub</a>.</p>
+<a id="more"></a>
+
+
+<h2 id="Headings"><a href="#Headings" class="headerlink" title="Headings"></a>Headings</h2><p>Headings are ranked using <code>#</code>. More <code>#</code>, lower rank and smaller size. </p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># H1</span></span><br><span class="line"><span class="section">#### H4</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h4 id="H4"><a href="#H4" class="headerlink" title="H4"></a>H4</h4><h2 id="Text-Styles"><a href="#Text-Styles" class="headerlink" title="Text Styles"></a>Text Styles</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="emphasis">*Italic*</span> </span><br><span class="line"><span class="strong">**Bold**</span></span><br><span class="line">~~Strikthrough~~</span><br></pre></td></tr></table></figure>
+
+<p><em>Italic</em> (<code>_</code> works the same as <code>*</code>)<br><strong>Bold</strong><br><del>Strikethrough</del></p>
+<h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><p>URLs will be automatically highlighted as links. For example, <a href="https://caizkun.github.io" target="_blank" rel="noopener">https://caizkun.github.io</a> .<br>Moreover, you can insert a link as follows:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">Cai's Blog</span>](<span class="link">https://caizkun.github.io "Mouse Hover Text"</span>)</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://caizkun.github.io" title="Mouse Hover Text" target="_blank" rel="noopener">Cai’s Blog</a> </p>
+<h2 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">Slam Dunk Buddies</span>](<span class="link">/images/slam_dunk.jpg "Happy  Training!"</span>)</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/slam_dunk.jpg" alt="Slam Dunk Buddies" title="Happy  Training!"></p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><p>Inline codes are embraced with back-ticks <code>`   `</code>.<br>For example, <code>std::cout &lt;&lt; Hellow World! &lt;&lt; std::endl;</code></p>
+<p>Code blocks are embraced with three back-ticks at both ends and syntax highlighting is enabled.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">```Cpp</span><br><span class="line">// C++ is awesome!</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">    std::cout &lt;&lt; &quot;Hello World!&quot; &lt;&lt; std::endl;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// C++ is awesome!</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Hello World!"</span> &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">```Java</span><br><span class="line"></span><br><span class="line">// Java is cool!</span><br><span class="line">public class Greeting &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        System.out.println(&quot;Hello World!&quot;);</span><br><span class="line">&#125;</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Java is cool!</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Greeting</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"Hello World!"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Quotes"><a href="#Quotes" class="headerlink" title="Quotes"></a>Quotes</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; "Pain is inevitatble. Suffering is optional."</span></span><br><span class="line"><span class="quote">&gt; --**Haruki Murakami, What I Talk About When I Talk About Running**</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>“Pain is inevitatble. Suffering is optional.”<br>–<strong>Haruki Murakami, What I Talk About When I Talk About Running</strong></p>
+</blockquote>
+<h2 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1. </span>Ordered Item1</span><br><span class="line"><span class="bullet">    * </span>Sub Unordered Item1a (note the indentation)</span><br><span class="line"><span class="bullet">    * </span>Sub Unordered Item1b</span><br><span class="line"><span class="bullet">5. </span>Ordered Item2 (numbering continued correctly, the leading number doesn't matter)</span><br><span class="line"></span><br><span class="line"><span class="bullet">7. </span>Ordered Item3 (one blank line doesn't stop the numbering)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="bullet">4. </span>New Ordered Item1 (two or more blank lines starts a new numbering)</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>Ordered Item1</p>
+<ul>
+<li>Sub Unordered Item1a (note the indentation)</li>
+<li>Sub Unordered Item1b</li>
+</ul>
+</li>
+<li><p>Ordered Item2 (numbering continued correctly, the leading number doesn’t matter)</p>
+</li>
+<li><p>Ordered Item3 (one blank line doesn’t stop the numbering)</p>
+</li>
+</ol>
+<ol start="4">
+<li>New Ordered Item1 (two or more blank lines starts a new numbering)</li>
+</ol>
+<h2 id="Tables"><a href="#Tables" class="headerlink" title="Tables"></a>Tables</h2><p>Tables can be created by using <code>-</code> and <code>|</code> to aggregate words. <code>:</code> can be used to align text.</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| Pred\Obs  | True | False |</span><br><span class="line">|:---------:|:-----|------:|</span><br><span class="line">| True      | 2032 | 23    |</span><br><span class="line">| False     | 50   | 195   |</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center">Pred\Obs</th>
+<th align="left">True</th>
+<th align="right">False</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">True</td>
+<td align="left">2032</td>
+<td align="right">23</td>
+</tr>
+<tr>
+<td align="center">False</td>
+<td align="left">50</td>
+<td align="right">195</td>
+</tr>
+</tbody></table>
+</div></article></div></main><footer><div class="paginator"><a href="/2017/10/03/cmake/" class="prev">PREV</a></div><div class="copyright"><p>© 2017 - 2019 <a href>Zhikun Cai</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>
